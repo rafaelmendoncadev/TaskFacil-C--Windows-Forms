@@ -17,6 +17,7 @@ namespace TaskFacil.Views
         public MainForm()
         {
             InitializeComponent();
+            this.Icon = new Icon("imagens/icone.ico");
             _tarefaController = new TarefaController();
             _notificationService = new NotificationService(_tarefaController);
             _exportService = new ExportService();
